@@ -3,8 +3,6 @@ dataDir = 'ehza_datasets_COVID';
 
 allImages = imageDatastore(fullfile(parentDir, dataDir),'IncludeSubfolders',true, 'LabelSource', 'foldername');
 
-rng default;
-
 [imgsTrain, imgsValidation] = splitEachLabel(allImages, 0.8, 'randomized');
 disp(['Number of training images: ', num2str(numel(imgsTrain.Files))]);
 disp(['Number of validation images: ', num2str(numel(imgsValidation.Files))]);
