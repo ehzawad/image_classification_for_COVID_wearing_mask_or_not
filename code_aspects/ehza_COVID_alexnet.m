@@ -35,3 +35,11 @@ opts = trainingOptions('sgdm', ...
     
 
 trainedAN = trainNetwork(augimgsTrain, layers, opts);
+
+
+trueLabels = imgsValidation.Labels;
+[YPred, probs] = classify(trainedAN, augimgsValidation);
+accuracy = mean(YPred == trueLabels);
+
+
+plotconfusion(trueLabels, YPred);
