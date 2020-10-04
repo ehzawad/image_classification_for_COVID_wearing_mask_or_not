@@ -1,4 +1,4 @@
-parentDir = '~/Desktop/omg_deep_learning_googlenet/';
+parentDir = '~/Desktop/omg_deep_learning/';
 dataDir = 'ehza_datasets_COVID';
 
 allImages = imageDatastore(fullfile(parentDir, dataDir),'IncludeSubfolders',true, 'LabelSource', 'foldername');
