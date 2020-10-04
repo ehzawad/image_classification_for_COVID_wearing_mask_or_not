@@ -18,7 +18,7 @@ inputSize = alex.Layers(1).InputSize;
 augimgsTrain = augmentedImageDatastore(inputSize(1:2), imgsTrain);
 augimgsValidation = augmentedImageDatastore(inputSize(1:2), imgsValidation);
 
-mbSize = 32;
+mbSize = 128;
 mxEpochs = 3;
 ilr = 1e-3;
 plt = 'training-progress';
