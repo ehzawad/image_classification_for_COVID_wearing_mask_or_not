@@ -2,7 +2,7 @@
 
 Make sure Deep learning toolbox is installed
 
-Alexnet and Googlenet is also installed;
+Alexnet and Googlenet packages require you to be installed;
  https://www.mathworks.com/matlabcentral/fileexchange/64456-deep-learning-toolbox-model-for-googlenet-network
 
 After downloading the project, go to "code_aspects" folder and run ehza_COVID_alexnet.m to run the pretrained model.
